@@ -442,7 +442,7 @@ export default async function handler(req: any, res: any) {
                                   <tbody>
                                     <tr>
                                       <td>
-                                        <p style="font-size: 1.5em>
+                                        <p>
                                           ${message}
                                         </p>
                                       </td>
