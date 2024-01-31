@@ -10,7 +10,7 @@ const Heros = () => {
                 <div className="pointer-events-none relative z-10">
                     <Reveal>
                         <h1 className="pointer-events-auto text-5xl lg:text-6xl lg:text-start font-black text-slate-100 md:text-8xl">
-                            Hi, I'm Tama<span className="text-indigo-500">.</span>
+                            Hi, I&apos;m Tama<span className="text-indigo-500">.</span>
                         </h1>
                     </Reveal>
                     <Reveal>
@@ -23,7 +23,7 @@ const Heros = () => {
                             A computer geek with a deep passion for programming, especially in web development and mobile
                             applications. Equipped with comprehensive skills acquired through Hacktiv8 bootcamp to become a
                             full-stack web developer, seeking opportunities to apply programming skills and contribute to projects
-                            that make a positive difference. Let's connect!
+                            that make a positive difference. Let&apos;s connect!
                         </p>
                     </Reveal>
                 </div>

@@ -127,7 +127,7 @@ const ExampleFeature = ({ featureInView }: { featureInView: FeatureType }) => {
                 <p className="font-mono text-sm text-slate-200">
                     <span className="text-green-300">~</span> Let me explains what{" "}
                     <span className="inline-block rounded bg-indigo-600 px-1 font-semibold">
-                        "{featureInView.title}"
+                    &quot;{featureInView.title}&quot;
                     </span>{" "}
                     means.
                 </p>
