@@ -6,19 +6,21 @@ import { Certifications } from "@/components/molecules/Certifications";
 import React, { ReactNode, useState } from "react";
 import TechStack from "@/components/molecules/TechStack";
 import FormContact from "@/components/molecules/FormContact";
+import Projects from "@/components/molecules/Projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className={`min-h-screen ${inter.className}`}>
-      <MouseMoveLineDrawing >
-        <Heros />
-        <WorkExperience />
-        <Certifications />
-        <TechStack />
-        <FormContact />
-      </MouseMoveLineDrawing>
+    <div className={`min-h-screen ${inter.className} bg-neutral-400`}>
+      {/* <MouseMoveLineDrawing > */}
+      <Heros />
+      <WorkExperience />
+      <Projects />
+      <Certifications />
+      <TechStack />
+      <FormContact />
+      {/* </MouseMoveLineDrawing> */}
     </div>
   );
 }

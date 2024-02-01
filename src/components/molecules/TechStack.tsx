@@ -32,11 +32,8 @@ import { IconType } from "react-icons";
 
 const TechStack = () => {
     return (
-        <section className="bg-white py-24">
-            <h2 className="mx-4 mb-12 text-center text-2xl font-medium text-neutral-900 md:text-4xl">
-                Tech Stack
-            </h2>
-            <div className="flex translate-y-[50%] rotate-[7deg] overflow-hidden border-y-4 border-neutral-900 bg-slate-400">
+        <section id="Technologies" className=" py-24">
+            <div className="flex translate-y-[50%] rotate-[7deg] overflow-hidden border-y-4 border-slate-900 bg-white">
                 <TranslateWrapper>
                     <LogoItemsTop />
                 </TranslateWrapper>
@@ -47,7 +44,7 @@ const TechStack = () => {
                     <LogoItemsTop />
                 </TranslateWrapper>
             </div>
-            <div className="flex -translate-y-[50%] -rotate-[7deg] overflow-hidden border-y-4 border-neutral-900 bg-slate-400">
+            <div className="flex -translate-y-[50%] -rotate-[7deg] overflow-hidden border-y-4 border-slate-900 bg-white">
                 <TranslateWrapper reverse>
                     <LogoItemsBottom />
                 </TranslateWrapper>

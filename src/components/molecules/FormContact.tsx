@@ -19,7 +19,7 @@ const FormContact = () => {
 
     return (
         <section
-            className="px-4 py-12 bg-slate-400 flex flex-wrap"
+            className="px-4 py-12 flex flex-wrap "
         >
             <div
                 ref={containerRef}
@@ -241,7 +241,7 @@ const CurLine = ({
 
     return (
         <>
-            <form onSubmit={onSubmit}>
+            <form onSubmit={onSubmit} id="Contact">
                 <input
                     ref={inputRef}
                     onChange={onChange}

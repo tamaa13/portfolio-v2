@@ -2,10 +2,11 @@ import { useEffect, useRef } from "react";
 import anime from "animejs";
 import { useAnimation, useInView, motion } from "framer-motion";
 import SpinningBox from "./SpinningBox";
+import ButtonDownload from "../atoms/ButtonDownload";
 
 const Heros = () => {
     return (
-        <section className="text-slat-100 overflow-hidden bg-neutral-950 px-8 py-24 md:px-12 md:py-32">
+        <section id="Home" className="text-slat-100 overflow-hidden bg-neutral-950 px-8 py-24 md:px-12 md:py-32">
             <div className="relative mx-auto max-w-5xl">
                 <div className="pointer-events-none relative z-10">
                     <Reveal>
@@ -26,6 +27,11 @@ const Heros = () => {
                             that make a positive difference. Let&apos;s connect!
                         </p>
                     </Reveal>
+                    <Reveal>
+                        <div className="pointer-events-auto">
+                            <ButtonDownload />
+                        </div>
+                    </Reveal>
                 </div>
                 <DotGrid />
             </div>
@@ -36,30 +42,6 @@ const Heros = () => {
 const GRID_WIDTH = 25;
 const GRID_HEIGHT = 20;
 
-const FuzzyOverlay = () => {
-    return (
-        <motion.div
-            initial={{ transform: "translateX(-10%) translateY(-10%)" }}
-            animate={{
-                transform: "translateX(10%) translateY(10%)",
-            }}
-            transition={{
-                repeat: Infinity,
-                duration: 0.2,
-                ease: "linear",
-                repeatType: "mirror",
-            }}
-            // You can download these PNGs here:
-            // https://www.hover.dev/black-noise.png
-            // https://www.hover.dev/noise.png
-            style={{
-                backgroundImage: 'url("/black-noise.png")',
-                // backgroundImage: 'url("/noise.png")',
-            }}
-            className="pointer-events-none absolute -inset-[100%] opacity-[15%]"
-        />
-    );
-};
 
 const DotGrid = () => {
     const handleDotClick = (e: any) => {

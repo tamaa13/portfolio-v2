@@ -35,16 +35,16 @@ const NUM_LINES = 30;
 // line of the sidebar
 const navItems = [
     { position: 1, title: "Home" },
-    { position: 8, title: "Projects" },
-    { position: 16, title: "Certifications" },
-    { position: 22, title: "Technologies" },
-    { position: 28, title: "Contact" },
+    { position: 5, title: "WorkExperiences" },
+    { position: 10, title: "Projects" },
+    { position: 15, title: "Certifications" },
+    { position: 20, title: "Technologies" },
+    { position: 25, title: "Contact" },
 ];
 
 const SideStaggerNavigation = () => {
     const [isHovered, setIsHovered] = useState(false);
     const mouseY = useMotionValue(Infinity);
-    const [isOpen, setIsOpen] = useState(false);
 
 
     return (
@@ -62,6 +62,11 @@ const SideStaggerNavigation = () => {
             >
                 {Array.from(Array(NUM_LINES).keys()).map((i) => {
                     const linkContent = navItems.find((item) => item.position === i + 1);
+                    // const { id, setId } = useStore()
+
+                    // useEffect(() => {
+                    //     setId(linkContent?.title)
+                    // }, [])
 
                     return (
                         <LinkLine
@@ -74,19 +79,13 @@ const SideStaggerNavigation = () => {
                 })}
             </motion.nav>
             {/* <div className="h-screen lg:hidden bg-gradient-to-br from-violet-600 to-indigo-600 grid place-content-center relative"> */}
-            <div className="bg-neutral-950 lg:hidden">
-                <div className="flex items-center justify-end  bg-transparent text-white">
-                    <motion.button
-                        whileHover={{ rotate: "180deg" }}
-                        whileTap={{ scale: 0.9 }}
-                        onClick={() => setIsOpen(true)}
-                        className="text-3xl  text-white hover:text-indigo-500 transition-colors p-4 rounded-full"
-                    >
-                        <FiMenu />
-                    </motion.button>
-                </div>
-                <Nav isOpen={isOpen} setIsOpen={setIsOpen} />
-            </div>
+
+
+            {/* <div className="bg-neutral-950 "> */}
+                {/* <div className="flex items-center sticky top-0 z-50 justify-end lg:hidden bg-transparent text-white"> */}
+                    
+                {/* </div> */}
+            {/* </div> */}
             {/* </div> */}
         </>
     );
@@ -131,7 +130,7 @@ const LinkLine = ({
 
     if (title) {
         return (
-            <a href="#">
+            <a href={`#${title}`}>
                 <motion.div
                     ref={ref}
                     className="group relative bg-neutral-500 transition-colors hover:bg-indigo-300"
@@ -165,98 +164,6 @@ const LinkLine = ({
 
 
 // Mobile
-const Nav = ({
-    isOpen,
-    setIsOpen,
-}: {
-    isOpen: boolean;
-    setIsOpen: Dispatch<SetStateAction<boolean>>;
-}) => {
-    return (
-        <div className="relative overflow-hidden">
-            <motion.nav
-                className="fixed top-0 bottom-0 w-screen z-50 bg-slate-300"
-                animate={isOpen ? "open" : "closed"}
-                variants={navVariants}
-                initial="closed"
-            >
-                <motion.button
-                    className="text-3xl text-black hover:text-indigo-500 border-[1px] border-transparent hover:border-indigo-500 transition-colors p-4 rounded-full absolute top-8 right-8"
-                    whileHover={{ rotate: "180deg" }}
-                    whileDrag={{ rotate: "180deg" }}
-                    onClick={() => setIsOpen(false)}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    <FiX />
-                </motion.button>
-                <motion.div
-                    className="flex flex-col gap-4 absolute bottom-8 left-8"
-                    variants={navLinkVariants}
-                >
-                    <NavLink text="Home" />
-                    <NavLink text="Projects" />
-                    <NavLink text="Certifications" />
-                    <NavLink text="Technologies" />
-                    <NavLink text="Contact" />
-                </motion.div>
-            </motion.nav>
-        </div>
-    );
-};
 
-const NavLink = ({ text }: { text: string }) => {
-    return (
-        <motion.a
-            className="inline-block z-50 text-neutral-950 w-fit font-black text-5xl hover:text-indigo-500 transition-colors"
-            variants={navLinkVariants}
-            transition={{
-                type: "spring",
-                damping: 3,
-            }}
-            whileHover={{
-                y: -15,
-                rotate: "-7.5deg",
-            }}
-            rel="nofollow"
-            href="#"
-        >
-            {text}
-        </motion.a>
-    );
-};
-
-
-const navVariants = {
-    open: {
-        x: "0%",
-        borderTopLeftRadius: "0vw",
-        borderBottomLeftRadius: "0vw",
-        opacity: 1,
-    },
-    closed: {
-        x: "100%",
-        borderTopLeftRadius: "50vw",
-        borderBottomLeftRadius: "50vw",
-        opacity: 0,
-    },
-};
-
-const linkWrapperVariants = {
-    open: {
-        transition: {
-            staggerChildren: 0.1,
-        },
-    },
-    closed: {
-        transition: {
-            staggerChildren: 0.1,
-        },
-    },
-};
-
-const navLinkVariants = {
-    open: { x: 0 },
-    closed: { x: 25 },
-};
 
 export default Navbar;

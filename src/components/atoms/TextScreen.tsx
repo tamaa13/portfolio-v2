@@ -42,11 +42,11 @@ export const TextScreen = () => {
 
     return (
         <div
-            className="flex w-full items-center overflow-hidden bg-white"
+            className="flex w-full items-center overflow-hidden "
             ref={containerRef}
         >
             <span
-                className="mx-auto whitespace-nowrap text-center font-bold uppercase text-slate-400"
+                className="mx-auto whitespace-nowrap text-center font-bold uppercase text-white"
                 ref={textRef}
             >
                 Projects
