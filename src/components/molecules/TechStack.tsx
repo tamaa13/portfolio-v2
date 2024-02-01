@@ -1,25 +1,33 @@
 import { motion } from "framer-motion";
 import {
-    SiNike,
-    Si3M,
-    SiAbstract,
-    SiAdobe,
-    SiAirtable,
-    SiAmazon,
-    SiBox,
-    SiBytedance,
-    SiChase,
-    SiCloudbees,
-    SiBmw,
-    SiHeroku,
-    SiBuildkite,
-    SiCouchbase,
-    SiDailymotion,
-    SiDeliveroo,
-    SiEpicgames,
-    SiGenius,
-    SiGodaddy,
+    SiTypescript ,
+    SiJavascript ,
+    SiReact ,
+    SiNextdotjs ,
+    SiVuedotjs ,
+    SiNuxtdotjs ,
+    SiRedux ,
+    SiTailwindcss ,
+    SiBootstrap ,
+    SiHtml5 ,
+    SiCss3 ,
+    SiApollographql ,
+    SiNodedotjs ,
+    SiTsnode ,
+    SiExpress ,
+    SiSequelize ,
+    SiPostgresql ,
+    SiMongodb ,
+    SiMongoose ,
+    SiGraphql ,
+    SiRedis ,
+    SiGithub ,
+    SiGitlab ,
+    SiReactquery ,
+    SiJquery ,
+    SiSocketdotio 
 } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 import { IconType } from "react-icons";
 
 const TechStack = () => {
@@ -89,31 +97,37 @@ const LogoItem = ({ Icon, name }: { Icon: IconType; name: string }) => {
 
 const LogoItemsTop = () => (
     <>
-        <LogoItem Icon={SiNike} name="Nike" />
-        <LogoItem Icon={Si3M} name="3M" />
-        <LogoItem Icon={SiAbstract} name="Abstract" />
-        <LogoItem Icon={SiAdobe} name="Adobe" />
-        <LogoItem Icon={SiAirtable} name="Airtable" />
-        <LogoItem Icon={SiAmazon} name="Amazon" />
-        <LogoItem Icon={SiBox} name="Box" />
-        <LogoItem Icon={SiBytedance} name="Bytedance" />
-        <LogoItem Icon={SiChase} name="Chase" />
-        <LogoItem Icon={SiCloudbees} name="Cloudebees" />
+        <LogoItem Icon={SiTypescript} name="Typescript" />
+        <LogoItem Icon={SiJavascript} name="Javascript" />
+        <LogoItem Icon={SiReact} name="ReactJS & React Native" />
+        <LogoItem Icon={SiNextdotjs} name="NextJS" />
+        <LogoItem Icon={SiVuedotjs} name="VueJS" />
+        <LogoItem Icon={SiNuxtdotjs} name="NuxtJS" />
+        <LogoItem Icon={SiRedux} name="Redux" />
+        <LogoItem Icon={SiTailwindcss} name="TailwindCSS" />
+        <LogoItem Icon={SiBootstrap} name="Bootstrap" />
+        <LogoItem Icon={SiHtml5} name="HTML" />
+        <LogoItem Icon={SiRedis} name="Redis" />
+        <LogoItem Icon={SiGitlab} name="Gitlab" />
+        <LogoItem Icon={SiJquery} name="JQuery" />
     </>
 );
 
 const LogoItemsBottom = () => (
     <>
-        <LogoItem Icon={SiBmw} name="BMW" />
-        <LogoItem Icon={SiBuildkite} name="Burton" />
-        <LogoItem Icon={SiBuildkite} name="Buildkite" />
-        <LogoItem Icon={SiCouchbase} name="Couchbase" />
-        <LogoItem Icon={SiDailymotion} name="Dailymotion" />
-        <LogoItem Icon={SiDeliveroo} name="deliveroo" />
-        <LogoItem Icon={SiEpicgames} name="Epic Games" />
-        <LogoItem Icon={SiGenius} name="Genius" />
-        <LogoItem Icon={SiGodaddy} name="GoDaddy" />
-        <LogoItem Icon={SiHeroku} name="Heroku" />
+        <LogoItem Icon={SiCss3} name="CSS" />
+        <LogoItem Icon={SiApollographql} name="Appolo Client" />
+        <LogoItem Icon={SiNodedotjs} name="Node JS" />
+        <LogoItem Icon={SiTsnode} name="Node TS" />
+        <LogoItem Icon={SiExpress} name="Express" />
+        <LogoItem Icon={SiSequelize} name="Sequelize" />
+        <LogoItem Icon={SiPostgresql} name="PostgreSQL" />
+        <LogoItem Icon={SiMongodb} name="MongoDB" />
+        <LogoItem Icon={SiMongoose} name="Mongoose" />
+        <LogoItem Icon={SiGraphql} name="GraphQL" />
+        <LogoItem Icon={SiGithub} name="Github" />
+        <LogoItem Icon={SiReactquery} name="React Query" />
+        <LogoItem Icon={SiSocketdotio } name="Socket IO" />
     </>
 );
 
