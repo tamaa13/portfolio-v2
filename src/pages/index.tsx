@@ -7,6 +7,7 @@ import React, { ReactNode, useState } from "react";
 import TechStack from "@/components/molecules/TechStack";
 import FormContact from "@/components/molecules/FormContact";
 import Projects from "@/components/molecules/Projects";
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
       <TechStack />
       <FormContact />
       {/* </MouseMoveLineDrawing> */}
+      <Analytics />
     </div>
   );
 }
