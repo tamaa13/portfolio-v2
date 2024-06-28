@@ -51,14 +51,12 @@ const Cards = () => {
                 className="relative -ml-[100px] h-[450px] w-[350px] md:-ml-[175px]"
             >
                 <Card
-                    testimonial="I am currently engaged in the development of the company profile website for PT Ihsan
-                    Solusi. Additionally, I am actively involved in projects centered around Islamic banking as a
-                    full-stack developer, utilizing Next.js, PostgreSQL, and TypeScript."
-                    author="PT Ihsan Solusi Informatika (October 2023 – December 2023)"
+                    testimonial="I handle mobile projects using C# and Xamarin."
+                    author="iSeller Commerce (June 2024 – Present)"
                     handleDragEnd={handleDragEnd}
                     dragProgress={dragProgress}
                     position={order[0]}
-                    role="Fullstack Developer"
+                    role="Mobile Engineer"
                 />
                 <Card
                     testimonial="During my tenure as a freelance Fullstack Developer, I specialized in front-end and back-end
@@ -71,13 +69,14 @@ const Cards = () => {
                     role="Fullstack Developer"
                 />
                 <Card
-
-                    testimonial="Take customer orders, provide recommendations, and handle transactions accurately."
-                    author="Kopi Chuseyo (February 2022 – August 2022)"
+                    testimonial="I am currently engaged in the development of the company profile website for PT Ihsan
+                    Solusi. Additionally, I am actively involved in projects centered around Islamic banking as a
+                    full-stack developer, utilizing Next.js, PostgreSQL, and TypeScript."
+                    author="PT Ihsan Solusi Informatika (October 2023 – December 2023)"
                     handleDragEnd={handleDragEnd}
                     dragProgress={dragProgress}
                     position={order[2]}
-                    role="Barista"
+                    role="Fullstack Developer"
                 />
             </motion.div>
         </div>
