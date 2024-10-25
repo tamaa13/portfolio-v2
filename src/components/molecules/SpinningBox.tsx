@@ -9,7 +9,7 @@ const SpinningBox = () => {
 const SpinningBoxText = () => {
     return (
         <span className="flex flex-col items-center justify-center gap-6 text-5xl font-semibold text-white md:flex-row md:gap-4">
-            I&apos;m a <Box front="Fullstack" bottom="Frontend" back="Backend" top="Mobile" /> Engineer
+            I&apos;m a <Box front="Fullstack dApps" bottom="Frontend" back="Backend" top="Mobile" /> Engineer
         </span>
     );
 };

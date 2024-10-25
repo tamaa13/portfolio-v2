@@ -21,10 +21,7 @@ const Heros = () => {
                     </Reveal>
                     <Reveal>
                         <p className="pointer-events-auto max-w-xl text-sm text-slate-300 md:text-base">
-                            A computer geek with a deep passion for programming, especially in web development and mobile
-                            applications. Equipped with comprehensive skills acquired through Hacktiv8 bootcamp to become a
-                            full-stack web developer, seeking opportunities to apply programming skills and contribute to projects
-                            that make a positive difference. Let&apos;s connect!
+                        A computer geek with a deep passion for programming, especially in web development, mobile applications, and blockchain technologies. With hands-on experience in platforms like Tokenomy, IDRX, and Nusa, I have developed advanced features like token swaps, staking, and cross-chain bridges across EVM and Solana networks. Equipped with comprehensive skills acquired through Hacktiv8 bootcamp to become a full-stack web developer, I am seeking opportunities to apply programming skills and contribute to projects that make a positive difference. Let&apos;s connect!
                         </p>
                     </Reveal>
                     <Reveal>
