@@ -25,7 +25,11 @@ import {
     SiGitlab ,
     SiReactquery ,
     SiJquery ,
-    SiSocketdotio 
+    SiSocketdotio,
+    SiSolidity,
+    SiWeb3Dotjs,
+    SiPhp,
+    SiGo
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IconType } from "react-icons";
@@ -107,6 +111,8 @@ const LogoItemsTop = () => (
         <LogoItem Icon={SiRedis} name="Redis" />
         <LogoItem Icon={SiGitlab} name="Gitlab" />
         <LogoItem Icon={SiJquery} name="JQuery" />
+        <LogoItem Icon={SiSolidity} name="Solidity" />
+        <LogoItem Icon={SiWeb3Dotjs} name="Web3JS" />
     </>
 );
 
@@ -125,6 +131,8 @@ const LogoItemsBottom = () => (
         <LogoItem Icon={SiGithub} name="Github" />
         <LogoItem Icon={SiReactquery} name="React Query" />
         <LogoItem Icon={SiSocketdotio } name="Socket IO" />
+        <LogoItem Icon={SiPhp} name="PHP" />
+        <LogoItem Icon={SiGo} name="Go" />
     </>
 );
 
