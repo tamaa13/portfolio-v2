@@ -51,7 +51,7 @@ const Cards = () => {
         className="relative -ml-[100px] h-[450px] w-[350px] md:-ml-[175px]"
       >
         <Card
-          testimonial="As a Web3 Fullstack Engineer, I contributed to the development of Tokenomy, IDRX, and Nusa, focusing on integrating token swap features, staking, bridging across EVM and Solana networks, as well as managing data and indexing systems to enhance the efficiency of blockchain ecosystems.."
+          testimonial="As a Web3 Fullstack Engineer, I contributed to the development of Tokenomy, IDRX, and Nusa, focusing on integrating token swap features, staking, bridging across EVM and Solana networks, as well as managing data and indexing systems to enhance the efficiency of blockchain ecosystems."
           author="Indodax (August 2024 – Present)"
           handleDragEnd={handleDragEnd}
           dragProgress={dragProgress}
