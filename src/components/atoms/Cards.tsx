@@ -59,7 +59,7 @@ const Cards = () => {
           role="Fullstack dApps Engineer"
         />
         <Card
-          testimonial="I handle mobile projects using C# and Xamarin."
+          testimonial="During my tenure at PT Intersoft Solutions, I handled the mobile project Livin' Merchant using C# and Xamarin. Livin' Merchant is a Point of Sales (POS) application developed by Bank Mandiri that helps improve the service provided by sellers to buyers."
           author="iSeller Commerce (June 2024 – August 2024)"
           handleDragEnd={handleDragEnd}
           dragProgress={dragProgress}
